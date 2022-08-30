@@ -2,6 +2,7 @@ package mx.itesm.ddg.equationsolvermvvm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import mx.itesm.ddg.equationsolvermvvm.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
