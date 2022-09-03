@@ -33,5 +33,14 @@ class QuadraticEquationSolver {
                     Complex(-(b / (2 * a)), -(sqrt(discriminant.absoluteValue) / (2 * a))))
             }
         }
+
+        /**
+         * Creates a string version of the solution depending if the solution exists or not.
+         * @param a Complex representing one solution.
+         * @return a String representing the solution.
+         */
+        fun parseSolution(solution: Complex?): String {
+            return solution?.toString() ?: "Ecuación no válida"
+        }
     }
 }

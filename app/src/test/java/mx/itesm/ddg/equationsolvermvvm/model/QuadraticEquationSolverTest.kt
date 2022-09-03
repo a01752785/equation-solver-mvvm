@@ -39,4 +39,11 @@ class QuadraticEquationSolverTest {
                                                Complex(-0.5, -0.8660254037844386)),
                      QuadraticEquationSolver.solve(1.0, 1.0, 1.0))
     }
+
+    @Test
+    fun testParseSolution() {
+        val complex = Complex(1.0, 2.3)
+        assertEquals(complex.toString(), QuadraticEquationSolver.parseSolution(complex))
+        assertEquals("Ecuación no válida", QuadraticEquationSolver.parseSolution(null))
+    }
 }

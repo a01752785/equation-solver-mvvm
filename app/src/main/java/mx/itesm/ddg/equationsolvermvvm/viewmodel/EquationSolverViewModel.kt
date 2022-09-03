@@ -23,19 +23,7 @@ class EquationSolverViewModel: ViewModel() {
      */
     fun solve(a: Double, b: Double, c: Double) {
         val solution: QuadraticEquationSolution = QuadraticEquationSolver.solve(a, b, c)
-
-        if (solution.solution1 != null) {
-            root1.value = solution.solution1.toString()
-        }
-        else {
-            root1.value = "Ecuación no valida"
-        }
-
-        if (solution.solution2 != null) {
-            root2.value = solution.solution2.toString()
-        }
-        else {
-            root2.value = "Ecuación no valida"
-        }
+        root1.value = QuadraticEquationSolver.parseSolution(solution.solution1)
+        root2.value = QuadraticEquationSolver.parseSolution(solution.solution2)
     }
 }
