@@ -1,6 +1,7 @@
 package mx.itesm.ddg.equationsolvermvvm.viewmodel
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import mx.itesm.ddg.equationsolvermvvm.model.QuadraticEquationSolution
 import mx.itesm.ddg.equationsolvermvvm.model.QuadraticEquationSolver
 
@@ -9,7 +10,7 @@ import mx.itesm.ddg.equationsolvermvvm.model.QuadraticEquationSolver
  * The ViewModel for the EquationSolverView.
  */
 
-class EquationSolverViewModel {
+class EquationSolverViewModel: ViewModel() {
     val root1: MutableLiveData<String> = MutableLiveData<String>()
     val root2: MutableLiveData<String> = MutableLiveData<String>()
 
