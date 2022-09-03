@@ -8,6 +8,11 @@ import mx.itesm.ddg.equationsolvermvvm.R
 import mx.itesm.ddg.equationsolvermvvm.databinding.ActivityMainBinding
 import mx.itesm.ddg.equationsolvermvvm.viewmodel.EquationSolverViewModel
 
+/**
+ * Author: David Damian
+ * The View for the Equation Solver.
+ */
+
 class EquationSolverView : AppCompatActivity() {
     private val viewModel: EquationSolverViewModel by viewModels()
     private lateinit var binding: ActivityMainBinding
