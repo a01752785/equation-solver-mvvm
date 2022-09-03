@@ -1,6 +1,5 @@
 package mx.itesm.ddg.equationsolvermvvm
 
-import androidx.test.ext.junit.runners.AndroidJUnit4
 import mx.itesm.ddg.equationsolvermvvm.model.Complex
 import mx.itesm.ddg.equationsolvermvvm.model.QuadraticEquationSolution
 import mx.itesm.ddg.equationsolvermvvm.model.QuadraticEquationSolver
@@ -15,7 +14,6 @@ import org.junit.Assert.*
  * Tests for the QuadraticEquationSolverTest
  */
 
-@RunWith(AndroidJUnit4::class)
 class QuadraticEquationSolverTest {
     @Test
     fun testNoSolution() {

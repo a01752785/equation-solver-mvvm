@@ -1,6 +1,5 @@
 package mx.itesm.ddg.equationsolvermvvm
 
-import androidx.test.ext.junit.runners.AndroidJUnit4
 import mx.itesm.ddg.equationsolvermvvm.model.Complex
 
 import org.junit.Test
@@ -13,7 +12,6 @@ import org.junit.Assert.*
  * Tests for the Complex class.
  */
 
-@RunWith(AndroidJUnit4::class)
 class ComplexTest {
     @Test
     fun testToString() {
