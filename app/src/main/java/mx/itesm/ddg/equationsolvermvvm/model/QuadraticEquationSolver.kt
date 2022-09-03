@@ -11,6 +11,13 @@ import kotlin.math.sqrt
 
 class QuadraticEquationSolver {
     companion object {
+        /**
+         * Computes the solutions for a quadratic equation using the quadratic equation formula.
+         * @param a the parameter a in the quadratic solution formula
+         * @param b the parameter b in the quadratic solution formula
+         * @param c the parameter c in the quadratic solution formula
+         * @return a QuadraticEquationSolution representing the solution of the equation
+         */
         fun solve(a: Double, b: Double, c: Double): QuadraticEquationSolution {
             val discriminant: Double = b * b - 4 * a * c
 
